@@ -1,0 +1,1 @@
+This is a bash script to setup openvpn on ubuntu 16.4 aws ec2.
