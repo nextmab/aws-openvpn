@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "All rights reserved to Nextmab"
+echo "Creator: Bare "
 sleep 3
 clear
 echo "This script is for ubuntu 16.4."
