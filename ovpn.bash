@@ -174,7 +174,7 @@ sudo sed -i '244s/.*/tls-auth ta.key 0/' /etc/openvpn/server.conf
 sudo sed -i '245i\key-direction 0' /etc/openvpn/server.conf
 sudo sed -i '250s/.*/cipher AES-128-CBC/' /etc/openvpn/server.conf
 sudo sed -i '251i\auth SHA256' /etc/openvpn/server.conf
-echo 'crl-verify crl.pem' | sudo tee --append /etc/openvpn/server.conf
+#echo 'crl-verify crl.pem' | sudo tee --append /etc/openvpn/server.conf
 
 
 
