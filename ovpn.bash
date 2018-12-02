@@ -48,7 +48,8 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			read -p "Client to remove: " name3
 			./revoke-full $name3
 			sudo cp ~/openvpn-ca/keys/crl.pem /etc/openvpn
-			sudo systemctl start openvpn@server
+			echo 'crl-verify crl.pem' | sudo tee --append /etc/openvpn/server.conf
+			sudo systemctl restart openvpn@server
 			echo""
 			echo "This error is ok it means revoking is DONE "
 			exit;;
